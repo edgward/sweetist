@@ -8,8 +8,8 @@
 var WebMarketVars = {
     currencyBefore: true, // true foe the currencies like USD, where the symbol comes before the number ($123.45). False for the symbol after the number (123,45 €) 
     currencySymbol: "$",
-    priceRange: [ 0, 1750 ], // minimum and maximum range for the price range selector
-    priceStep: 50
+    priceRange: [ 0, 200 ], // minimum and maximum range for the price range selector
+    priceStep: 25 
 };
 
 jQuery(document).ready(function($) {
@@ -31,8 +31,6 @@ jQuery(document).ready(function($) {
     var determineScreenClass = function() {
         $("html").toggleClass("large-screen", !isTouch());
     };
-
-
 
     //  ========== 
     //  = Smooth scroll to the top of the page & scroll menu = 
@@ -98,7 +96,6 @@ jQuery(document).ready(function($) {
             $this.carouFredSel(configuration);
         });
     });
-
 
 
     //  ========== 
@@ -180,7 +177,6 @@ jQuery(document).ready(function($) {
     };
 
 
-
     //  ========== 
     //  = Scroll inspector = 
     //  ========== 
@@ -207,7 +203,6 @@ jQuery(document).ready(function($) {
     };
 
 
-
     //  ========== 
     //  = Thumbnail selector = 
     //  ========== 
@@ -216,7 +211,6 @@ jQuery(document).ready(function($) {
         $($(this).attr("href")).attr("src", $(this).find("img").attr("src"));
         $(this).parent().addClass("active").siblings(".active").removeClass("active");
     });
-
 
 
     //  ========== 
@@ -235,7 +229,6 @@ jQuery(document).ready(function($) {
             $(this).siblings('input[type="text"]').val(number - 1);
         }
     });
-
 
 
     //  ========== 

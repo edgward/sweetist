@@ -5,7 +5,6 @@
 
 		<!-- COMMENTING OUT MULTIPLE LINES --> 
 		<% if false %> 
-
 			<!--  = TOP ROW WITH WELCOME MESSAGE, MY ACCOUNT, CHECKOUT =  -->
 			<!--  = Removing top row, attempting to move My Account to next row area (replacing social network functions)  -->
 
@@ -14,18 +13,14 @@
                 <div class="row">
                     <div class="span4">
                         <div class="higher-line">
-
                             <% if user_signed_in? %>
                                 Welcome <%= current_user.email %>
                                 <%= link_to '[logout]', destroy_user_session_path, :method => :delete %>
-
                             <% else %>
                                 Welcome! Please
                                 <a href="#registerModal" role="button" data-toggle="modal">Register</a> or
                                 <a href="#loginModal" role="button" data-toggle="modal">Login</a>
-
                             <% end %>
-
                         </div>
                     </div>
                     <div class="span8">
@@ -38,8 +33,6 @@
                                 <a href="/checkout" class="gray-link">Checkout</a>
                             </div>
                             &nbsp;
-
-
                         </div>
                     </div>
                 </div>
@@ -51,15 +44,14 @@
 
         <div class="container">
             <div class="row">
-
                 <!--  ==========  -->
                 <!--  = Logo =  -->
                 <!--  ==========  -->
                 <div class="span7">
                     <a class="brand" href="/">
-                        <img src="images/logo.png" alt="Webmarket Logo" width="48" height="48" />
-                        <span class="pacifico">Sweetist</span>
-                        <span class="tagline">The best place to find and experience sweets!</span>
+                        <img src="images/sweetist-logo-cropped.png" alt="sweetist logo" width="120px" height="100px" />
+												<!--  <span class="garamond">sweetist</span>  -->
+                        <span class="tagline">Get the best local desserts and sweets delivered to your door!</span>
                     </a>
                 </div>
 
@@ -75,23 +67,6 @@
 										<!-- Moving "My Account" to be on same row as Logo --> 
 										<a href="/account" class="gray-link">My account</a>
 
-		<!-- COMMENTING OUT MULTIPLE LINES --> 
-		<% if false %> 
-                <!--  = Social Icons =  -->
-                        <div class="icons">
-                            <a href="https://www.facebook.com"><span class="zocial-facebook"></span></a>
-                            <!-- <a href="skype:primozcigler?call"><span class="zocial-skype"></span></a> -->
-                            <a href="https://twitter.com/itswenson"><span class="zocial-twitter"></span></a>
-                           <!--  <a href="http://eepurl.com/xFPYD"><span class="zocial-rss"></span></a>
-                            <a href="#"><span class="zocial-wordpress"></span></a>
-                            <a href="#"><span class="zocial-android"></span></a>
-                            <a href="#"><span class="zocial-html5"></span></a>
-                            <a href="#"><span class="zocial-windows"></span></a>
-                            <a href="#"><span class="zocial-apple"></span></a> -->
-												</div> <!-- end of social icons -->
-
-				<% end %>
-				<!-- END MULTIPLE LINE COMMENTING --> 
 			</div>
 		</div> <!-- right side of brand row -->
 
@@ -123,7 +98,7 @@
 										<!--  <a class="brand" href="/">  
 											-->
 										<a href="/">
-											<img src="images/logo.png" alt="Webmarket Logo" width="24" height="24" />
+											<img src="images/sweetist-logo-cityscape-only.png" alt="sweetist logo" width="48" height="48" />
                     </a>
 										</li>
 										<!--		<li><a href="/">Home</a></li>  --> <!-- No need for Home link since logo is the home link -->

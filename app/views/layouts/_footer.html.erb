@@ -1,37 +1,81 @@
-
-
-<!--  ==========  -->
-    <!--  = Footer =  -->
-    <!--  ==========  -->
+<!--  ===========================  -->
+<!--  = Footer _footer.html.erb =  -->
+<!--  ===========================  -->
     <footer>
 
         <!--  ==========  -->
         <!--  = Upper footer =  -->
         <!--  ==========  -->
-        <div class="foot-light">
+        <div class="foot-dark">
             <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <h2 class="pacifico">Sweetist &nbsp; <img src="images/webmarket.png" alt="Webmarket Cart" class="align-baseline" /></h2>
-                        <p>The preeminent place to find out and shop delicious and rare experiences in sweets and baked goods! </p>
-                    </div>
-                    <div class="span4">
-                        <div class="main-titles lined">
-                            <h3 class="title">Facebook</h3>
-                        </div>
-                        <div class="bordered">
-                            <div class="fill-iframe">
-                                <div class="fb-like-box" data-href="https://www.facebook.com/ProteusNet" data-width="292" data-height="200" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="main-titles lined">
-                            <h3 class="title"><span class="light">Newsletters</span> Signup</h3>
-                        </div>
-                        <p>Sign up to stay on top of deals and steals!</p>
+							<div class="row">  <!-- row-container for entire upper footer area -->
+
+								<div class="span4">  <!-- left-most third of upper footer area -->
+									<img src="images/sweetist-logo-cropped.png" alt="Sweetist Logo" width="250px" class="align-baseline">
+									<!--									<h2 class="pacifico main-titles"><img src="images/sweetist-logo-cropped.png" alt="Sweetist Logo" width="300px" class="align-baseline" /></h2>  -->
+									<p class="size-14">The best local desserts and sweets delivered to your door!</p>
+									<div class="span6 size-14 no-margin">
+										&copy; 2014 Sweetist, Inc.
+									</div>
+								</div>
+
+								<div class="span4 size-14">  <!-- middle third of upper footer area -->
+									<div class="main-titles no-margin">
+										<h3 class="title no-margin"><span class="size-16">GET TO KNOW US</span></h3>
+									</div>
+									<div class="nav upper-footer-row3">
+										<div class="row3-2column-element first-child">
+											<a href="#">About Us</a>
+										</div>
+										<div class="row3-2column-element">
+											<a href="#">Blog</a>
+										</div>
+									</div>
+
+									<div class="nav upper-footer-row3">				
+										<div class="row3-2column-element first-child">
+											<a href="#">How It Works</a>
+										</div>
+										<div class="row3-2column-element">
+											<a href="#">Legal & Privacy</a>
+										</div>
+									</div>
+													
+									<div class="nav upper-footer-row3">
+										<div class="row3-2column-element first-child">
+											<a href="#">Delivery Options</a>
+										</div>
+										<div class="row3-2column-element">
+											<a href="#"></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="span4">  <!-- right-most third of upper footer area -->
+									<div class="main-titles no-margin">
+										<h3 class="title"><span class="size-16">TALK TO US</span></h3>
+									</div>
+
+									<div class="nav upper-footer-row3 size-16 contact-us">
+										Need anything? Please reach out to us: 
+									</div>
+									<div class="nav upper-footer-row3 size-16 push-down-30">
+										<p><a href="#">help@sweetist.co</a>
+									</div>
+
+									<h3 class="title size-16" style="padding-top: 10px;"><p>KEEP UP WITH US</h3>
+										<div class="nav upper-footer-row3 size-16">
+											<a href="https://www.facebook.com"><span class="zocial-facebook"></span></a>
+											<a href="https://www.facebook.com"><span class="zocial-instagram"></span></a>
+											<a href="https://twitter.com/itswenson"><span class="zocial-twitter"></span></a>
+											<a href="https://twitter.com/itswenson"><span class="zocial-googleplus"></span></a>
+										</div>
+									</div>
+
+<!--										<p>Sign up to stay on top of deals and steals!</p>    -->
                         <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
+<!--
+												<div id="mc_embed_signup">
                         <form action="https://#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form form-inline" target="_blank" novalidate>
                             <div class="mc-field-group">
                                 <input type="email" value="" placeholder="Enter your e-mail address" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -43,114 +87,14 @@
                             </div>
 
                         </form>
-                        </div>
+											</div>
+-->
                         <!--End mc_embed_signup-->
                     </div>
                 </div>
             </div>
         </div> <!-- /upper footer -->
 
-				<!-- COMMENTING OUT MULTIPLE LINES -->
-				<!-- REMOVING MIDDLE FOOTER AREA -->
-				<% if false %>
-
-        <!--  ==========  -->
-        <!--  = Middle footer =  -->
-        <!--  ==========  -->
-        <div class="foot-dark">
-            <div class="container">
-                <div class="row">
-
-                    <!--  ==========  -->
-                    <!--  = Menu 1 =  -->
-                    <!--  ==========  -->
-                    <div class="span3">
-                        <div class="main-titles lined">
-                            <h3 class="title"><span class="light">Main</span> Navigation</h3>
-                        </div>
-                        <ul class="nav bold">
-                            <li><a href="#">Home</a></li>
-                     <!--        <li><a href="#">Pages</a></li> -->
-                            <li><a href="/about">About Us</a></li>
-                        <!--     <li><a href="#">Shortcodes</a></li>
-                            <li><a href="#">Gallery</a></li> -->
-                            <li><a href="/contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <!--  ==========  -->
-                    <!--  = Menu 2 =  -->
-                    <!--  ==========  -->
-                   <!--  <div class="span3">
-                        <div class="main-titles lined">
-                            <h3 class="title"><span class="light">Second</span> Navigation</h3>
-                        </div>
-                        <ul class="nav">
-                            <li><a href="#">Lorem Ipsum Dolor Sit</a></li>
-                            <li><a href="#">Amet Webmarket Signup</a></li>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Latest Tweets Sometging</a></li>
-                            <li><a href="#">Ipsum Sit Lorem Amet</a></li>
-                        </ul>
-                    </div> -->
-
-                    <!--  ==========  -->
-                    <!--  = Menu 3 =  -->
-                    <!--  ==========  -->
-              <!--       <div class="span3">
-                        <div class="main-titles lined">
-                            <h3 class="title"><span class="light">Third</span> Navigation</h3>
-                        </div>
-                        <ul class="nav">
-                            <li><a href="#">Lorem Ipsum Dolor Sit</a></li>
-                            <li><a href="#">Amet Webmarket Signup</a></li>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Latest Tweets Sometging</a></li>
-                            <li><a href="#">Ipsum Sit Lorem Amet</a></li>
-                        </ul>
-                    </div> -->
-
-                    <!--  ==========  -->
-                    <!--  = Menu 4 =  -->
-                    <!--  ==========  -->
-                    <!-- <div class="span3">
-                        <div class="main-titles lined">
-                            <h3 class="title"><span class="light">Fourth</span> Navigation</h3>
-                        </div>
-                        <ul class="nav">
-                            <li><a href="#">Lorem Ipsum Dolor Sit</a></li>
-                            <li><a href="#">Amet Webmarket Signup</a></li>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Latest Tweets Sometging</a></li>
-                            <li><a href="#">Ipsum Sit Lorem Amet</a></li>
-                        </ul>
-                    </div> -->
-                </div>
-            </div>
-        </div> <!-- /middle footer -->
-				
-				<!-- COMMENTING OUT MULTIPLE LINES -->
-				<!-- FINISHED REMOVING MIDDLE FOOTER AREA -->
-			<% end %>
-
-        <!--  ==========  -->
-        <!--  = Bottom Footer =  -->
-        <!--  ==========  -->
-        <div class="foot-last">
-            <a href="#" id="toTheTop">
-                <span class="icon-chevron-up"></span>
-            </a>
-            <div class="container">
-                <div class="row">
-                    <div class="span6">
-                        &copy; 2014 Sweetist, Inc.
-                    </div>
-                    <div class="span6">
-                        <div class="pull-right"><a href="http://www.proteusthemes.com">Legal & Privacy</a></div>
-                    </div> 
-                </div>
-            </div>
-        </div> <!-- /bottom footer -->
     </footer> <!-- /footer -->
 
 
