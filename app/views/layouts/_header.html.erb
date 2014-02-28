@@ -3,45 +3,6 @@
     <!--  ==========  -->
     <header id="header">
 
-		<!-- COMMENTING OUT MULTIPLE LINES --> 
-		<% if false %> 
-			<!--  = TOP ROW WITH WELCOME MESSAGE, MY ACCOUNT, CHECKOUT =  -->
-			<!--  = Removing top row, attempting to move My Account to next row area (replacing social network functions)  -->
-
-		<div class="darker-row">
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <div class="higher-line">
-                            <% if user_signed_in? %>
-                                Welcome <%= current_user.email %>
-                                <%= link_to '[logout]', destroy_user_session_path, :method => :delete %>
-                            <% else %>
-                                Welcome! Please
-                                <a href="#registerModal" role="button" data-toggle="modal">Register</a> or
-                                <a href="#loginModal" role="button" data-toggle="modal">Login</a>
-                            <% end %>
-                        </div>
-                    </div>
-                    <div class="span8">
-                        <div class="topmost-line">
-                            <div class="higher-line">
-                                <a href="/account" class="gray-link">My account</a>
-                                &nbsp; | &nbsp;
-                           <!--      <a href="/wishlist" class="gray-link">Wishlist (2)</a>
-                                &nbsp; | &nbsp; -->
-                                <a href="/checkout" class="gray-link">Checkout</a>
-                            </div>
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-            </div>
-					</div>
-					<!--   End of darker-row container (TOP ROW) -->
-				<% end %>
-				<!-- END MULTIPLE LINE COMMENTING --> 
-
         <div class="container">
             <div class="row">
                 <!--  ==========  -->
@@ -55,18 +16,33 @@
                     </a>
                 </div>
 
-		<!-- REMOVING SOCIAL FUNCTIONALITY FOR NOW - WILL REPLACE WITH MY ACCOUNT AND MOVE SOCIAL APPS TO FOOTER --> 
-		<!-- Change made Feb 24 [EC] --> 
 								<!--  ==========  -->
-                <!--  = Social Icons =  -->
                 <!--  = Right Side of Brand Row =  -->
                 <!--  ==========  -->
                 <div class="span5">
-									<div class="top-right">
+									<!--	<div class="top-right">aa-->
 
-										<!-- Moving "My Account" to be on same row as Logo --> 
-										<a href="/account" class="gray-link">My account</a>
+                    <div class="span4">
+											<div class="higher-line">
+												<% if user_signed_in? %>
+													Welcome <%= current_user.email %>
+													<%= link_to '[logout]', destroy_user_session_path, :method => :delete %>
+												<% else %>
+													Welcome! Please
+													<a href="#registerModal" role="button" data-toggle="modal">Register</a> or
+													<a href="#loginModal" role="button" data-toggle="modal">Login</a>
+												<% end %>
+											</div>
+										</div>
+											<!--  </div>  -->
 
+                    <div class="span4">
+										<div class="higher-line">
+											<!-- Moving "My Account" to be on same row as Logo --> 
+
+											<a href="/account" class="gray-link">My account</a>
+										</div>
+										</div>
 			</div>
 		</div> <!-- right side of brand row -->
 
@@ -104,13 +80,12 @@
 										<!--		<li><a href="/">Home</a></li>  --> <!-- No need for Home link since logo is the home link -->
 										<li><a href="/products">Products</a></li>
 										<li><a href="/vendors">Bakeries</a></li>
+										<!--
 										<li><a href="/blog">Blog</a></li>
                     <li><a href="about">About Us</a></li>
-                    <li><a href="contact">Contact</a></li>
+										<li><a href="contact">Contact</a></li>
+										-->
                   </ul>
-
-
-
 
                   <!--  ==========  -->
                   <!--  = Search form =  -->
@@ -142,8 +117,8 @@
 
 								<div class="cart">
 
-                        <p class="items">CART <span class="dark-clr"><%=@cart.length %></span></p>
-												<p class="dark-clr hidden-tablet">$1816.90</p>
+                        <p class="items">CART <span class="dark-clr">(<%=@cart.length %>)</span></p>
+												<!-- <p class="dark-clr hidden-tablet">$1816.90</p> -->
                         <a href="checkout-step-1.html" class="btn btn-danger">
                             <!-- <span class="icon icons-cart"></span> -->
                             <i class="icon-shopping-cart"></i>
