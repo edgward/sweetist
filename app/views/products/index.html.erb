@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<!--[if lt IE 8]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--  ==========================  -->
+<!--  == All Products page ===  -->
+<!--  = products/index.html.erb =  -->
+<!--  ==========================  -->
 
 
-    <!--  ==========  -->
+		<!--  ==========  -->
     <!--  = Breadcrumbs =  -->
     <!--  ==========  -->
     <div class="darker-stripe">
@@ -88,16 +87,16 @@
                                 <div class="picture">
                                     <a href="product/<%=product.id%>"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
                                     <div class="img-overlay">
-                                        <a href="product/<%= product.id %>" class="btn more btn-primary">More</a>
+                                        <a href="products/<%= product.id %>" class="btn more btn-primary">More</a>
                                         <a href="#" class="btn buy btn-danger">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="main-titles no-margin">
 
-															<a href="product/<%=product.id%>"><h4 class="product_name no-margin"><%= product.name %></h4></a>
-			 												<a href="product/<%=product.id%>"><h4 class="price">$<%= product.price %></h4></a>
-			 												<a href="vendor/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></h5></a>
+															<a href="products/<%=product.id%>"><h4 class="product_name no-margin"><%= product.name %></h4></a>
+			 												<a href="products/<%=product.id%>"><h4 class="price">$<%= product.price %></h4></a>
+			 												<a href="vendors/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></h5></a>
 
                             </div>
                             <p class="desc"><%= product.description %></p>
@@ -118,19 +117,17 @@
                             </div>
                     </div>
                   </div>
-
-
               </div> <!-- /product -->
-
                 <% end %>
 
                       </div> <!-- /isotope-container -->
                   </div> <!-- /popup-products -->
                   <hr />
 
-                  <!--  ==========  -->
+          <!--  ==============  -->
           <!--  = Pagination =  -->
-          <!--  ==========  -->
+					<!--  ==============  -->
+					<!--
                   <div class="pagination pagination-centered">
                         <ul>
                             <li><a href="#" class="btn btn-primary"><span class="icon-chevron-left"></span></a></li>
@@ -141,8 +138,12 @@
                             <li><a href="#">5</a></li>
                             <li><a href="#" class="btn btn-primary"><span class="icon-chevron-right"></span></a></li>
                         </ul>
-                    </div> <!-- /pagination -->
-                </section> <!-- /span12 -->
+											</div> 
+					-->	
+											<!-- /pagination -->
+
+
+					</section> <!-- /span12 -->
             </div>
         </div>
     </div> <!-- /container -->

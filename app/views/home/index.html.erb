@@ -55,18 +55,18 @@
 
 										<div class="product-img">
 											<div class="picture">
-												<a href="product/<%=product.id%>"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
+												<a href="products/<%=product.id%>"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
 												<div class="img-overlay">
-													<a href="product/<%=product.id%>" class="btn more btn-primary">More</a>
+													<a href="products/<%=product.id%>" class="btn more btn-primary">More</a>
 													<a href="#" class="btn buy btn-danger">Add to Cart</a>
 												</div>
 											</div>
 										</div>
 										<div class="main-titles no-margin no-padding">
 
-											<a href="product/<%=product.id%>"><h4 class="product_name no-margin"><%= product.name %></h4></a>
-											<a href="product/<%=product.id%>"><h4 class="price">$<%= product.price %></h4></a>
-											<a href="vendor/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></h5></a>
+											<a href="products/<%=product.id%>"><h4 class="product_name no-margin"><%= product.name %></h4></a>
+											<a href="products/<%=product.id%>"><h4 class="price">$<%= product.price %></h4></a>
+											<a href="vendors/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></h5></a>
 													
 										</div>
 										<p class="desc"><%= product.description %></p>
