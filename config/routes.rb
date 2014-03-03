@@ -15,7 +15,6 @@ Tastemaker::Application.routes.draw do
 
   get "zipcode_check" => "home#zipcode_check"
 
-
   get "blog" => "blogs#index"
   get "about" => "home#about"
   get "contact" => "home#contact"
@@ -25,22 +24,12 @@ Tastemaker::Application.routes.draw do
 
   get "checkout" => "cart_items#index"
 
-
-
-
-
   resources :products
   resources :vendors
   resources :cart_items
   resources :orders
 
-
-
-
-
-
-
-  # The priority is based upon order of creation: first created -> highest priority.
+	# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

@@ -29,10 +29,18 @@
 
 
           <!--main content -->
+          <!-- Website is not currently using the below registration modal... [3/1/2014 EC] -->
+          <!-- Registration code in app/views/layout/_footer.html.erb -->
     <div class="body_stuff devise">
           <h2>Sign up</h2>
               <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
                 <%= devise_error_messages! %>
+
+                <div><%= f.label :first_name %><br />
+                <%= f.email_field :first_name, :autofocus => true %></div>
+
+                <div><%= f.label :last_name %><br />
+                <%= f.email_field :last_name, :autofocus => true %></div>
 
                 <div><%= f.label :email %><br />
                 <%= f.email_field :email, :autofocus => true %></div>

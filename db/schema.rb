@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222033415) do
+ActiveRecord::Schema.define(version: 20140303053905) do
 
   create_table "cart_items", force: true do |t|
     t.integer  "order_id"
@@ -66,7 +66,9 @@ ActiveRecord::Schema.define(version: 20140222033415) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.boolean  "admin",                  default: false
-    t.boolean  "approved",               default: false, null: false
+    t.boolean  "approved",               default: true,  null: false
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["approved"], name: "index_users_on_approved"

@@ -5,6 +5,7 @@
 <!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
+	<%= javascript_include_tag :defaults %>
 
 	<head>
     <meta charset="utf-8">
@@ -58,10 +59,11 @@
 
     <div class="master-wrapper">
 
+			<!-- Messages / alerts information in _messages.html.erb file -->
+			<%= render 'layouts/messages' %>
+
 			<!-- Header and Nav-bar in _header.html.erb file -->
 			<%= render 'layouts/header' %>
-
-			<%= render 'layouts/messages' %>
 
 			<!-- Yielding to controller routing -->
 			<%= yield %>
@@ -70,7 +72,6 @@
 			<%= render 'layouts/footer' %>
 
 		</div> <!-- end of master-wrapper -->
-
 
 	</body>
 </html>
