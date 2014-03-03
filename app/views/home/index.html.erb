@@ -68,11 +68,6 @@
 											<a href="product/<%=product.id%>"><h4 class="price">$<%= product.price %></h4></a>
 											<a href="vendor/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></h5></a>
 													
-<% if false %>  <!-- working code to show product name and price on same line -->
-												<a href="product/<%=product.id%>"><h4 class="product_name no-margin"><%= product.name %></a>
-													<h4 class="price">$<%= product.price %></h4>
-												<a href="vendor/<%= vendor.id %>"><h5 class="product_vendor"><%= vendor.name %></a>
-<% end %>									
 										</div>
 										<p class="desc"><%= product.description %></p>
 
